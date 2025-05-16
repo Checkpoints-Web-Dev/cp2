@@ -47,10 +47,41 @@ body {
 
 .container-conteudo {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rodape {
   background-color: #222222;
   color: #fff;
   padding: 15px;
+}
+
+#container-sobre {
+  background-color: #222222;
+  padding: 40px;
+  border-radius: 10px;
+  color: #fff;
+  width: 60%;
+  display: flex;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+
+#container-sobre:hover {
+  transform: translateY(-10px);
+}
+
+#imagem-loja {
+  width: 300px;
+  border-radius: 10px;
+  height: 300px;
+  object-fit: cover;
+}
+
+#sobre-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
