@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.cabecalho {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 15px;
+  background-color: #222222;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.75em;
+}
+
+.cabecalho nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.cabecalho nav ul a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cabecalho nav ul a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
