@@ -19,6 +19,13 @@ body {
 
 .logo {
   font-size: 1.75em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 60px;
 }
 
 .cabecalho nav ul {
