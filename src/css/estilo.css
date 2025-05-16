@@ -37,3 +37,13 @@ body {
   color: #ccc;
   text-decoration: underline;
 }
+
+.container-conteudo {
+  height: 100vh;
+}
+
+.rodape {
+  background-color: #222222;
+  color: #fff;
+  padding: 15px;
+}
