@@ -7,9 +7,6 @@ let imagens = [
   "src/assets/imagem6.jpg",
   "src/assets/imagem7.jpg",
   "src/assets/imagem8.jpg",
-  "src/assets/imagem9.jpg",
-  "src/assets/imagem10.jpg",
-  "src/assets/imagem11.jpg",
 ];
 
 let i = 0;
