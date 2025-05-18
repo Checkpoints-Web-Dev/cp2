@@ -3,28 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/estilo.css" />
     <title>VelociMotors</title>
   </head>
   <body>
-    <header>
-      <h1 class="logo">VelociMotors</h1>
+    <header class="cabecalho">
+      <a class="logo" href="/">
+        <img src="../assets/zilla.png" alt="Logo da VelociMotors" />
+        VelociMotors
+      </a>
       <nav>
         <ul>
           <li>
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="./quiz.html">Quiz</a>
+            <a href="./carros.html">Carros</a>
+          </li>
+          <li>
+            <a href="./sobre.html">Sobre</a>
+          </li>
+          <li>
+            <a href="./quiz.html" style="text-decoration: underline">Quiz</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <section class="banner">
-      <img id="image" alt="Imagem" />
-    </section>
+    <main>
+      <h1 class="titulo-pagina">
+        <p>Bem-vindo ao Questionário</p>
+        <div>
+          <p>Contato: (11) 9 9999-9999</p>
+          <p>Email: velocimotors@gmail.com</p>
+          <p>Endereço: Rua Veloci 123</p>
+        </div>
+      </h1>
 
-    <footer>
+      <section class="container-conteudo">
+        <form id="quiz">
+          <h2>Questionário</h2>
+
+          <section id="container-perguntas" class="perguntas">
+            <h2 id="pergunta"></h2>
+
+            <div id="container-respostas">
+              <input
+                type="text"
+                id="resposta"
+                placeholder="Digite sua resposta"
+              />
+            </div>
+
+            <button id="proximo">Próxima Pergunta</button>
+
+            <p id="message"></p>
+          </section>
+
+          <section id="container-resultado" class="resultado hidden">
+            <h2>Resultado do Quiz</h2>
+
+            <ul id="lista-resultado"></ul>
+
+            <button id="inicio-btn">Reiniciar</button>
+          </section>
+        </form>
+      </section>
+    </main>
+
+    <footer class="rodape">
       <h5>&copy; 2025 - Todos os direitos reservados</h5>
     </footer>
 

@@ -8,10 +8,10 @@
   </head>
   <body>
     <header class="cabecalho">
-      <div class="logo">
+      <a class="logo" href="/">
         <img src="../assets/zilla.png" alt="Logo da VelociMotors" />
         VelociMotors
-      </div>
+      </a>
       <nav>
         <ul>
           <li>
@@ -21,7 +21,7 @@
             <a href="./carros.html">Carros</a>
           </li>
           <li>
-            <a href="./sobre.html">Sobre</a>
+            <a href="./sobre.html" style="text-decoration: underline">Sobre</a>
           </li>
           <li>
             <a href="./quiz.html">Quiz</a>
@@ -30,31 +30,44 @@
       </nav>
     </header>
 
-    <main class="container-conteudo">
-      <div id="container-sobre">
-        <img
-          src="../assets/imgloja.jpg"
-          alt="Imagem da Loja"
-          id="imagem-loja"
-        />
-
-        <div id="sobre-texto">
-          <h2>Sobre Nós</h2>
-          <p>
-            Na EletroDrive, somos apaixonados por mobilidade sustentável.
-            Oferecemos uma seleção de carros 100% elétricos das principais
-            marcas do mercado, com atendimento personalizado e suporte completo.
-            Aqui, você encontra inovação, economia e respeito ao meio ambiente
-            em cada modelo. Venha conhecer o futuro da direção.
-          </p>
+    <main>
+      <h1 class="titulo-pagina">
+        <p>Sobre a VelociMotors</p>
+        <div>
+          <p>Contato: (11) 9 9999-9999</p>
+          <p>Email: velocimotors@gmail.com</p>
+          <p>Endereço: Rua Veloci 123</p>
         </div>
-      </div>
+      </h1>
+      <section class="container-conteudo">
+        <div id="container-sobre">
+          <img
+            src="../assets/imgloja.jpg"
+            alt="Imagem da Loja"
+            id="imagem-loja"
+          />
+
+          <div id="sobre-texto">
+            <h2>Sobre Nós</h2>
+            <p>
+              Na VelociMotors, acreditamos no futuro da mobilidade sustentável.
+              Somos uma loja especializada em carros elétricos, comprometida em
+              oferecer aos nossos clientes uma nova experiência de direção: mais
+              limpa, silenciosa, econômica e eficiente. Nosso objetivo é tornar
+              a tecnologia elétrica acessível para todos, com veículos que unem
+              inovação, desempenho e responsabilidade ambiental. Trabalhamos com
+              as principais marcas do mercado, oferecendo desde modelos
+              compactos para o dia a dia até SUVs e utilitários de alta
+              performance Seja bem-vindo à VelociMotors — movida pelo futuro,
+              movida por você.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="rodape">
       <h5>&copy; 2025 - Todos os direitos reservados</h5>
     </footer>
-
-    <script src="./src/js/script.js"></script>
   </body>
 </html>
