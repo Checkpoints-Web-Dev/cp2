@@ -30,7 +30,46 @@
       </nav>
     </header>
 
-    <main class="container-conteudo"></main>
+    <main>
+      <h1 class="titulo-pagina">
+        <p>Quiz</p>
+        <div>
+          <p>Contato: (11) 9 9999-9999</p>
+          <p>Email: velocimotors@gmail.com</p>
+          <p>Endereço: Rua Veloci 123</p>
+        </div>
+      </h1>
+
+      <section class="container-conteudo">
+        <form id="quiz">
+          <h2>Questionário</h2>
+
+          <section id="container-perguntas" class="perguntas">
+            <h2 id="pergunta"></h2>
+
+            <div id="container-respostas">
+              <input
+                type="text"
+                id="resposta"
+                placeholder="Digite sua resposta"
+              />
+            </div>
+
+            <button id="proximo">Próxima Pergunta</button>
+
+            <p id="message"></p>
+          </section>
+
+          <section id="container-resultado" class="resultado hidden">
+            <h2>Resultado do Quiz</h2>
+
+            <ul id="lista-resultado"></ul>
+
+            <button id="inicio-btn">Reiniciar</button>
+          </section>
+        </form>
+      </section>
+    </main>
 
     <footer class="rodape">
       <h5>&copy; 2025 - Todos os direitos reservados</h5>

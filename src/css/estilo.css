@@ -54,28 +54,55 @@ body {
 
 .titulo-pagina {
   margin: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulo-pagina div {
+  font-size: 16px;
 }
 
 .container-conteudo {
-  min-height: 85svh;
+  min-height: 80svh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.banner {
-  text-align: center;
+#carros-home {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
-#image {
+#banner-imagens {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#image,
+#image2,
+#image3 {
   width: 600px;
   height: 400px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: transform 0.3s ease;
 }
 
-.banner p {
+#image:hover,
+#image2:hover,
+#image3:hover {
+  transform: translateY(-10px);
+}
+
+#carros-home p {
   margin-top: 10px;
   font-size: 20px;
   font-weight: 600;
@@ -107,9 +134,9 @@ body {
 }
 
 #imagem-loja {
-  width: 200px;
+  width: 300px;
   border-radius: 10px;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -175,4 +202,62 @@ body {
 #carros-cards button a {
   text-decoration: none;
   color: #fff;
+}
+
+#quiz {
+  background-color: #222222;
+  padding: 40px 80px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#quiz button {
+  padding: 8px 15px;
+  background-color: #169976;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#quiz button:hover {
+  background-color: #1dcd9f;
+}
+
+.perguntas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#container-respostas input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+
+.resultado {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#lista-resultado {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  overflow-y: scroll;
+  max-height: 300px;
+}
+
+.hidden {
+  display: none;
 }
